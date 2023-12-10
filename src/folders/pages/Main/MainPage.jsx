@@ -46,7 +46,7 @@ export function MainPage() {
               }`}
               onClick={() => setSubjectIndex(2)}
             >
-              English
+              Solidity
             </button>
           </div>
         </div>
@@ -73,7 +73,7 @@ export function MainPage() {
               } mr-[20px] `}
               onClick={() => setWeekIndex(1)}
             >
-              Math
+              Week Two
             </button>
             <button
               className={`${
@@ -83,7 +83,7 @@ export function MainPage() {
               }`}
               onClick={() => setWeekIndex(2)}
             >
-              English
+              Week Three
             </button>
           </div>
         </div>
@@ -92,7 +92,7 @@ export function MainPage() {
         {students.map((student) => (
           <Person
             key={uuidv4()}
-            firstName={student.name}
+            firstName={student.firstName}
             lastName={student.lastName}
             initialGrades={student.grades}
             id={student.id}

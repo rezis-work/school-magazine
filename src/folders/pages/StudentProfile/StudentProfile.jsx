@@ -25,15 +25,17 @@ export function StudentProfile() {
   }, []);
 
   return (
-    <div className="flex items-center">
+    <div className="flex items-center justify-center p-[100px]">
       <div className="person">
-        <h1 className="person-name">
-          <span>{gotStudent.firstName}</span>
-          <span>{gotStudent.lastName}</span>
+        <h1 className="person-name text-[50px] mb-7">
+          <span>{gotStudent.firstName}</span> <span>{gotStudent.lastName}</span>
         </h1>
-        <div className="person-grades">
+        <div className="person-grades flex gap-10">
           {gotStudent.grades?.map((week, i) => (
-            <div key={uuidv4()} className="grades-week">
+            <div
+              key={uuidv4()}
+              className="grades-week border-[1px] border-[#868e96] p-[12px]"
+            >
               <h1>Week {i + 1}</h1>
               <SubjectGrades
                 subject={"Beck End"}

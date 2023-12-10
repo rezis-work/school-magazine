@@ -17,7 +17,7 @@ export const studentsGrades = [
 ];
 export const demoStudents = [
   {
-    name: "ნინო",
+    firstName: "ნინო",
     lastName: "ნადირაძე",
     grades: [
       [
@@ -39,7 +39,7 @@ export const demoStudents = [
     id: "1",
   },
   {
-    name: "ლუკა",
+    firstName: "ლუკა",
     lastName: "გამსახურდია",
     grades: [
       [
@@ -61,7 +61,7 @@ export const demoStudents = [
     id: "011",
   },
   {
-    name: "მათე",
+    firstName: "მათე",
     lastName: "ცინცაძე",
     grades: [
       [
@@ -83,7 +83,7 @@ export const demoStudents = [
     id: "2",
   },
   {
-    name: "გაგა",
+    firstName: "გაგა",
     lastName: "ფანჯიკიძე",
     grades: [
       [

@@ -7,8 +7,8 @@ import { OnOut } from "../../hooks/OnOut";
 
 export function Modal({ showing, onClose }) {
   const modalRef = useRef(null);
-  const [firstName, setFirstName] = useState();
-  const [lastName, setLastName] = useState();
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const { students, setStudents } = useMyContext();
 
   function validIn() {
