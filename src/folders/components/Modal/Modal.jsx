@@ -23,7 +23,7 @@ export function Modal({ showing, onClose }) {
     const student = {
       firstName: firstName,
       lastName: lastName,
-      grades: studentsGrades,
+      grades: JSON.parse(JSON.stringify(studentsGrades)),
       id: id,
     };
 
